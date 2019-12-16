@@ -21,9 +21,8 @@
         }
 
         body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
+            background-image: url("img/flowers.jpg");
+            background-size: auto;
         }
 
         h1 {
@@ -36,6 +35,24 @@
             margin: 0 auto;
             width: 280px;
         }
+
+        .wrapper{
+        width: 60%;
+        height: auto;
+        background-color: #ffc7f2;
+        border: 10px solid rgb(48, 63, 56);
+        border: 10px solid rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding;
+        background-clip: padding-box;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
 
         @media only screen and (max-width: 280px) {
 
@@ -53,8 +70,11 @@
     </style>
 </head>
 <body>
+
+<div class="wrapper">
     <h1>Page Not Found</h1>
     <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
+</div>
+</body>>
 </html>
 <!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
